@@ -171,7 +171,7 @@ public class StreamingMusica {
         Playlist p = usuario.getPlaylist(index);
         if (p == null) return;
 
-        System.out.println("\nPlaylist: " + p.nome);
+        System.out.println("\nPlaylist: " + p.getNome());
         p.listarMusicas();
 
         int total = p.getDuracaoTotal();
@@ -204,7 +204,7 @@ public class StreamingMusica {
     }
 
     public static void adicionarMusicasTeste() {
-        musicas.add(new Musica("Bohemian Rhapsody", "Queen", 354, "Rock"));
+        musicas.add(new Musica("Did it first (With Central Cee)", "Ice Spice, Central Cee", 118, "Trap"));
         musicas.add(new Musica("Eu Sou 157", "Racionais MC's", 529, "Rap"));
     }
 }
